@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Nike";
+  src: url("/Font/nike_font.ttf");
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header{
+  position: relative;
+ padding-top: 50px;
+ display: flex;
+  
+}
+
+header img{
+  height: 100px;
+  width: 150px;
+}
+
+
+section .container{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container .country{
+  position: relative;
+  width: 100%;
+}
+
+.container h1{
+  font-weight:100;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+.container .country{
+ 
+  display: flex;
+  gap: 10px;
+
+}
+.container .country h3,.container .country button{
+ font-size: 28px;
+}
+
+.container .country button{
+  background-color: transparent;
+  border: none;
+  color:#757575;
+  text-decoration: underline;
+}
+.container .country button:hover{
+  cursor: pointer;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+form input{
+  padding: 20px;
+  width: 90%;
+  min-width: 45%;
+  border-radius: 15px;
+  margin-left: -30px;
+}
+
+form p{
+  color: #757575;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+form .btn{
+  cursor: pointer;
+  border-radius: 35px;
+  padding: 10px;
+  font-weight: 100;
+  font-size: 28px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+  align-self: flex-end;
+  margin-right: 30px;
+  text-decoration: none;
+  margin: auto;
+}
+
+form p span{
+  text-decoration: underline;
+}
+
+form label {
+  font-size: 18px;
+  font-weight: bold; 
+  margin-bottom: 5px; 
+  color: #333; 
+  width: 100%; 
+  text-align: left; 
+}
+
+.btns{
+  margin-top: 15px;
+  width: 100%;
+  display: flex; justify-content: space-between;
+}
+
+form input:focus {
+  outline: none;
+  border: 3px solid #000; /
+}

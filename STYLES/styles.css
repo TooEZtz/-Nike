@@ -1,0 +1,490 @@
+@font-face {
+  font-family: "Nike";
+  src: url("/Font/nike_font.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  height: 7%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  align-items: center;
+  z-index: 10;
+}
+
+.left_header {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+
+.left_header .logo {
+  width: 100%;
+}
+
+.left_header .logo img {
+  width: 100%;
+}
+
+/* -------------------------- Mid Navbar ---------------------------- */
+.mid_header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  font-family: "Nike", sans-serif;
+  padding: 0;
+}
+
+.mid_header nav ul li {
+  font-size: 16px;
+}
+
+.mid_header nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.mid_header nav ul li a:hover {
+  color: #ff0000; 
+}
+
+.right_header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right_header .navbar {
+  display: flex;
+}
+
+.right_header .navbar li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+
+/* ---------------------- Hamburger Menu ------------------------- */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.hamburger i {
+  color: #333;
+}
+
+/* Sections----------------------------------------------------------------------------------------------------------------------------- */
+.hero1 {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+.hero1_overlay h2 span {
+  font-style: normal;
+  color: #EA553C;
+}
+.hero1_video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero1_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero1_overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero1_overlay h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.Texts {
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.Texts span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.Texts h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.Texts p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.Texts a {
+  padding: 12px 20px;
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.Texts a:hover {
+  background-color: #d32f2f;
+}
+
+/* ------------------------------ Image Grid (hero2) ------------------------------ */
+
+.hero2 .images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  gap: 5px;
+}
+
+.hero2 .images img {
+  width: 50%;
+  object-fit: cover;
+}
+
+/* ------------------------------ Media Queries for Small Screens ------------------------------ */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .mid_header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero1_overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero1_overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .Texts h1 {
+    font-size: 2rem;
+  }
+
+  .Texts p {
+    font-size: 1rem;
+  }
+
+  .hero2 .images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero2 .images img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero1_overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero1_overlay h2 {
+    font-size: 1rem;
+  }
+
+  .Texts h1 {
+    font-size: 1.5rem;
+  }
+
+  .Texts p {
+    font-size: 1rem;
+  }
+
+  .Texts a {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+/* 
+-----------------------------------hero3----------------------------------------------------------- */
+
+.hero3 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero3 nav {
+  width: 25%;
+}
+
+.hero3 nav ul {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.hero3 nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hero3 nav ul li a:hover {
+  color: gray;
+}
+
+/* ----------------------------------------------footer---------------------------------------- */
+
+/* Footer */
+footer {
+  padding: 5% 5%;
+  position: relative;
+  margin-top: 40px;
+}
+
+footer .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4rem;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+footer .section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .section h4 {
+  font-size: rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .section p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: gray;
+  margin-bottom: 0.3rem;
+}
+
+footer .section p:hover {
+  cursor: pointer;
+  color: black;
+}
+
+footer .country-region select {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  background: #f4f4f4;
+  color: #333;
+  cursor: pointer;
+}
+
+footer .subscription form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+footer .subscription form input[type="email"] {
+  padding: 0.5rem;
+  flex: 1;
+  border: none;
+  border-radius: 4px;
+}
+
+footer .subscription {
+  margin-top: 25px;
+}
+
+footer .subscription form button {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+footer .subscription form button:hover {
+  background-color: #ff2929;
+}
+
+footer .branding p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nike";
+  color: black;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+    padding: 0.5rem;
+  }
+
+  .left_header {
+    height: 40px;
+    width: 40px;
+  }
+
+  .mid_header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero1 {
+    height: 400px;
+  }
+
+  section
+
+  .hero2 img {
+    width: 100%;
+  }
+
+  footer .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mid_header nav ul {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger{
+    display: block; 
+  }
+
+  .mid_header nav ul.active {
+    display: flex; 
+  }
+
+  .mid_header nav ul li {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .right_header {
+    display: none; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    height: 50px;
+    padding: 0.2rem;
+  }
+
+  .left_header {
+    height: 30px;
+    width: 30px;
+  }
+
+  .mid_header nav ul {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .right_header nav ul {
+    display: none; 
+  }
+
+  .hero1 {
+    height: 300px;
+  }
+
+  .hero2 {
+    height: 600px;
+  }
+
+  .hero2 img {
+    width: 100%;
+  }
+
+  footer .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  footer .subscription form input[type="email"] {
+    width: 100%;
+  }
+
+  footer .subscription form button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+}

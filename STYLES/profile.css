@@ -1,0 +1,160 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.profile-container:hover{
+  animation: fadeIn 0.8s ease-in-out;
+}
+.profile-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #555;
+  font-weight: 500;
+}
+
+.profile-info, .profile-orders {
+  padding: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+table th {
+  background-color: #f8f8f8;
+  color: #333;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+table td {
+  color: #666;
+  font-size: 16px;
+}
+
+table .total {
+  font-weight: bold;
+}
+
+.profile-info p strong, table td {
+  color: #333;
+}
+
+.logout-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f44336; 
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f; 
+}
+
+.logout-btn:active {
+  background-color: #c62828; 
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+      padding: 20px;
+  }
+
+  .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+  }
+
+  .profile-pic {
+      width: 80px;
+      height: 80px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+}
